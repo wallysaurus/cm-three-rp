@@ -40,7 +40,8 @@ loader.load('./resources/models/R-computer-two.gltf', function (gltf) {
 	},
 	function ( xhr ) {}, // loading
 	function ( error ) { console.log( 'An error happened' ); } // error loading
-).load('./resources/models/R-computer-two-glow.gltf', function (gltf) {
+);
+loader.load('./resources/models/R-computer-two-glow.gltf', function (gltf) {
 	  scene.add( gltf.scene );
   },
   function ( xhr ) {}, // loading
