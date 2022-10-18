@@ -55,7 +55,6 @@ window.addEventListener('resize', () => {
 })
 
 renderer.setAnimationLoop(() => {
-	console.log(camera.position);
 	controls.update();
 	renderer.render(scene, camera);
 });
