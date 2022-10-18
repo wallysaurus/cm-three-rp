@@ -1,4 +1,6 @@
-import './style.css'
+import './style.css';
+import './resources/models/R-computer-two-glow.gltf';
+import './resources/models/R-computer-two.gltf';
 import * as THREE from 'three';
 
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
@@ -35,7 +37,7 @@ const controls = new OrbitControls( camera, renderer.domElement );
 
 const loader = new GLTFLoader();
 
-loader.load('./resources/models/R-computer-two.gltf', function (gltf) {
+loader.load('./resources/models/R-computer-two-glow.gltf', function (gltf) {
 		scene.add( gltf.scene );
 	},
 	function ( xhr ) {}, // loading
