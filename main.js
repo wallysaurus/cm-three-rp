@@ -1,4 +1,6 @@
 import './style.css';
+import './resources/models/computer.gltf';
+import './resources/models/computer_glow.gltf';
 import * as THREE from 'three';
 
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
