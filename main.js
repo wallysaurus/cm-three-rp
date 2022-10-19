@@ -35,17 +35,17 @@ const controls = new OrbitControls( camera, renderer.domElement );
 
 const loader = new GLTFLoader();
 
-loader.load('./resources/models/R-computer-two.gltf', function (gltf) {
+loader.load('./resources/models/computer.gltf', function (gltf) {
 		scene.add( gltf.scene );
 	},
 	function ( xhr ) {}, // loading
-	function ( error ) { console.log( 'An error happened' ); } // error loading
+	function ( error ) { console.log( error ); } // error loading
 );
-loader.load('./resources/models/R-computer-two-glow.gltf', function (gltf) {
+loader.load('./resources/models/computer_glow.gltf', function (gltf) {
 	  scene.add( gltf.scene );
   },
   function ( xhr ) {}, // loading
-  function ( error ) { console.log( 'An error happened' ); } // error loading
+  function ( error ) { console.log( error ); } // error loading
 );
 
 window.addEventListener('resize', () => {
